@@ -13,6 +13,8 @@
 <body>
     <div class="container">
         @yield('content')
+    	@include('includes.messages')
+
     </div>
     
 </body>

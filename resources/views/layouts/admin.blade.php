@@ -79,6 +79,7 @@
 		</div><!--/.row-->
 		
 		<div class="panel panel-container" style="padding: 3rem;">
+			@include('includes.messages')
 			@yield('content')
 		</div>
 		
