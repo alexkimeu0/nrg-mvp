@@ -22,4 +22,12 @@ Route::post('/submit-application', [App\Http\Controllers\ApplicationController::
 
 Auth::routes();
 
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+Route::get('/application/{id}', [App\Http\Controllers\DashboardController::class, 'show'])->name('show');
+Route::DELETE('/application/{id}', [App\Http\Controllers\DashboardController::class, 'destroy'])->name('destroy');
+
+
+
+Auth::routes();
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
